@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+     background: url("https://images.unsplash.com/photo-1700394474173-6428c2ea061c?q=80&w=748&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D") no-repeat center center fixed;
+  background-size: cover;
+
+}
+
+.container {
+  background: rgba(255, 255, 255, 0.85);
+  border-radius: 20px;
+  padding: 20px 30px;;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  overflow: visible;
+  position: relative;
+  padding-bottom: 100px;
+  text-align: center;
+  backdrop-filter: blur(10px);
+  margin-bottom: 0;
+  height: 350px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin: 2rem 0 1rem 0;
+}
+
+form select, button, input{
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 0.75rem;
+}
+
+form input {
+   border: 1px solid lightgray;
+  font-size: 1rem;
+  height: 3rem;
+  padding: 0 1rem;
+  width: 100%;
+  border-radius: 0.75rem;
+  text-align: left;
+}
+
+.dropdown {
+  display: flex;
+  justify-content:space-between;
+  align-items: center;  
+  margin-top: 2rem;
+}
+
+.select-container img{
+    max-width: 2rem;
+}
+
+.select-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 6rem;
+    border-radius: 0.5rem;
+    border: 1px solid lightgray;  
+}
+
+.select-container select {
+    font-size: 1rem;
+    width: auto;
+}
+
+select {
+  position: relative;
+  z-index: 10;
+}
+
+.msg {
+    margin: 2rem 0 2rem 0;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+form button {
+    height: 3rem;
+    background-color: #af4d98 ;
+    color: #fff;
+    font-size: 1.15rem;
+    cursor: pointer;
+}
+
+input[type="number"] {
+  width: 100%;
+  height: 3rem;
+  padding: 0 1rem;
+  font-size: 1rem;
+  color: #000;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  outline: none;
+  transition: all 0.3s ease;
+  box-sizing: border-box;
+  text-align: left;    
+}
+
+input[type="number"]::placeholder {
+  color: #555;
+  font-size: 1rem;
+  
+  opacity: 0.8;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+} 
+
+input[type="number"]:hover::placeholder {
+  color: #f3f1f3; 
+  opacity: 1;
+}
+
+input[type="number"]:focus {
+  border: 1px solid #9b3bb3;
+  box-shadow: 0 0 8px rgba(155, 59, 179, 0.3);
+}
+
+.custom-dropdown {
+  position: relative;
+  width: 150px;
+  cursor: pointer;
+  font-family: sans-serif;
+}
+
+.selected-option {
+  background: white;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.options-list {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: white;
+  max-height: 200px;
+  overflow-y: auto;
+  border: 1px solid #ccc;
+  border-top: none;
+  display: none;
+  z-index: 999;
+}
+
+.options-list li {
+  padding: 10px;
+  list-style: none;
+}
+
+.options-list li:hover {
+  background: #eee;
+}
